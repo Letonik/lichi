@@ -1,0 +1,21 @@
+$colorButton: #ffffff;
+$colorBackgroundButton: #000000;
+$colorBackgroundButtonHover: #ff1b1b;
+
+.product {
+  width: 150px;
+  img {
+    width: 100%;
+  }
+  button {
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    background: $colorBackgroundButton;
+    color: $colorButton;
+    border: none;
+    &:hover {
+      background:$colorBackgroundButtonHover;
+    }
+  }
+}

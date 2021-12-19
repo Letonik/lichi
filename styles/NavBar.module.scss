@@ -1,0 +1,20 @@
+$colorActive: #ff001e;
+
+.navBar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  a {
+    font-weight: 500;
+    &:hover {
+      color: $colorActive;
+    }
+  }
+  .linkActive {
+    color: $colorActive;
+  }
+  img {
+    width: 100px;
+  }
+}

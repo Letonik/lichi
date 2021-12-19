@@ -1,0 +1,58 @@
+$colorBackgroundHover: #c6c6c6;
+
+.productBasket {
+  display: flex;
+  margin: 10px 0;
+  .image {
+    width: 90px;
+    margin-right: 20px;
+    img{
+      width: 100%;
+    }
+  }
+  .main {
+    flex-grow: 1;
+    .head {
+      display: flex;
+      justify-content: space-between;
+      .name {
+        font-weight: 400;
+      }
+      .delete {
+        padding: 0 7px;
+        cursor: pointer;
+        &:hover {
+          background: $colorBackgroundHover;
+        }
+      }
+    }
+    .price {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .info {
+      font-weight: 400;
+      font-size: 12px;
+      .items {
+        .names {
+          width: 80px;
+          display: inline-block;
+        }
+        .values {
+          .button {
+            padding: 0 5px;
+            cursor: pointer;
+            &:hover {
+              background: $colorBackgroundHover;
+            }
+          }
+          .count {
+            margin: 0 5px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
