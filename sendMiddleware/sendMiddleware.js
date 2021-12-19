@@ -1,6 +1,7 @@
 import * as axios from "axios";
 import cookie from 'cookie';
 const $instance = axios.create({
+    withCredentials: true,
     baseURL: `https://lichi.com/api/`,
 });
 export const send = async (reqCookies, res, url, params = {}) => {
